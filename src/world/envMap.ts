@@ -27,7 +27,7 @@ export function setEnv(){
   const envMap = getEnvCube()
   // scene.environment = envMap
   scene.background = envMap
-  scene.backgroundBlurriness = 0.4;
+  scene.backgroundBlurriness = 0.9;
   scene.backgroundIntensity = .4;
   // scene.environmentIntensity = 0.4;
 }

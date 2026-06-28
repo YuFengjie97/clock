@@ -45,7 +45,7 @@ export async function initScene() {
     renderer.setSize(window.innerWidth, window.innerHeight)
   })
 
-  const {renderPipeline} = getRenderPipeline()
+  // const {renderPipeline} = getRenderPipeline()
 
 
   function animate() {
@@ -57,8 +57,8 @@ export async function initScene() {
       elapsed: timer.getElapsed()
     })
 
-    // renderer.render(scene, camera)
-    renderPipeline.render()
+    renderer.render(scene, camera)
+    // renderPipeline.render()
   }
 
   // 使用setAnimationLoop会自动在第一帧init webgpuRender,如果是window.requestAnimationFrame() 要手动init
